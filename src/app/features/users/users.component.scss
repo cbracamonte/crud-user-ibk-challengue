@@ -1,0 +1,51 @@
+@import "abstracts/colors/colors";
+
+.ibk-panel-body {
+  margin: 2em;
+}
+
+.ibk-table {
+  width: 100%;
+}
+
+.ibk-table-thead {
+  border-top: 2px solid $border-secondary;
+  border-bottom: 2px solid $border-secondary;
+  &__th {
+    text-transform: uppercase;
+    text-align: center;
+    padding: 10px;
+    color: $text-primary;
+    border: 1px solid $border-secondary;
+  }
+}
+
+.ibk-table-tbody-tr {
+  border-bottom: 1px solid $border-secondary;
+  color: $text-primary;
+  &__th {
+    padding-left: 10px;
+    border: 1px solid $border-secondary;
+  }
+}
+
+.ibk-table-tbody-td {
+  padding: 10px;
+  border: 1px solid $border-secondary;
+}
+
+.ibk-table-footer {
+  display: flex;
+  justify-content: flex-end;
+  margin: 2em 0;
+  &__button {
+    background-color: $background-primary;
+  }
+}
+
+.ibk-table-actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}

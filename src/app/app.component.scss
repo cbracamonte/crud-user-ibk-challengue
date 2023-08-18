@@ -1,0 +1,38 @@
+@import "abstracts/colors/colors";
+
+.ibk-navbar {
+  background-color: $background-primary;
+  &__brand {
+    color: $text-white;
+  }
+}
+
+.ibk-footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: $background-secondary;
+  text-align: center;
+}
+
+.ibk-footer-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__image {
+    align-self: end;
+    max-height: 48px;
+    width: 48px;
+    min-width: 48px;
+    -o-object-fit: contain;
+    object-fit: contain;
+  }
+  &__title {
+    color: $text-white;
+    margin: 0;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: -0.4px;
+  }
+}
