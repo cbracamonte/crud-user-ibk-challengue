@@ -1,6 +1,32 @@
+# RETO INTERBANK - SISTEMA DE ADMINISTRACIÓN DE USUARIOS
+
+Este proyecto es un ejemplo de un CRUD de Usuarios
+
+# Funcionalidades
+
+- Crea, actualiza, elimina, Lista usuarios
+- Aplicación de microfrontends
+- STACK MEAN + StencilJS + StoryBook + Docker + Nginx
+- Genera screenshots de las funciones del CRUD
+
 # Microfrontend Example with Docker
 
 Este proyecto es un ejemplo de microfrontend utilizando Docker para el entorno de desarrollo y demostrando cómo compartir estados entre microfrontends utilizando el concepto de BroadcastChannel
+
+## Demo Images
+
+- Listado
+![Listado del Usuarios](./assets/listado.png)
+- Agregar
+![Agregar del Usuarios](./assets/agegar.png)
+- Editar
+![Editar del Usuarios](./assets/editar.png)
+- Eliminar
+![Eliminar del Usuarios](./assets/eliminar.png)
+- Genera Imagen
+![Genera imagen para su descarga](./assets/generafoto.png)
+
+-
 
 ## Técnologias
 
