@@ -29,7 +29,7 @@ En este caso de uso saremos IFRAME como canal para la llamada a otros microfront
 - Listado
 ![Listado del Usuarios](https://raw.githubusercontent.com/cbracamonte/crud-user-ibk-challengue/main/assets/listado.PNG)
 - Agregar
-![Agregar del Usuarios](https://raw.githubusercontent.com/cbracamonte/crud-user-ibk-challengue/main/assets/agegar.PNG)
+![Agregar del Usuarios](https://raw.githubusercontent.com/cbracamonte/crud-user-ibk-challengue/main/assets/agregar.PNG)
 - Editar
 ![Editar del Usuarios](https://raw.githubusercontent.com/cbracamonte/crud-user-ibk-challengue/main/assets/editar.PNG)
 - Eliminar
