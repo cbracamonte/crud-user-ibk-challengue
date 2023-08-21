@@ -65,10 +65,10 @@ En este caso de uso saremos IFRAME como canal para la llamada a otros microfront
 
 ## Construcción y Ejecución
 
-npm install
-npm run build
-npm run docker-build
-npm run docker-run
+    npm install
+    npm run build
+    npm run docker-build
+    npm run docker-run
 
 - Asegúrate de tener el puerto 80 disponible para la aplicación shell.
 
@@ -83,8 +83,8 @@ Para el manejo de estados entre microfrontends, se utiliza el concepto de Broadc
 
 - Para instalar la librería:
 
-npm install broadcast-channel-hb
-
+    ```javascript
+    npm install broadcast-channel-hb
 - La idea es generar eventos en la shell (app Angular) y escuchar estos eventos en otras aplicaciones (microfrontends) para compartir estados.
 
 - Repositorio: <https://github.com/cbracamonte/broadcast-channel-ibk>
@@ -93,6 +93,9 @@ npm install broadcast-channel-hb
 
 - Este proyecto es un ejemplo y puede requerir ajustes y mejoras adicionales.
 - No se ha implementado la persistencia de datos en este ejemplo por temas de tiempo
+-
+
+---
 
 ## Pizza Owner
 
