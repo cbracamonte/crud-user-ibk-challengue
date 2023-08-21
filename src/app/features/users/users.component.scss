@@ -23,7 +23,7 @@
 .ibk-table-tbody-tr {
   border-bottom: 1px solid $border-secondary;
   color: $text-primary;
-  &__th {
+  &__td {
     padding-left: 10px;
     border: 1px solid $border-secondary;
   }
@@ -34,10 +34,11 @@
   border: 1px solid $border-secondary;
 }
 
-.ibk-table-footer {
+.ibk-header {
   display: flex;
   justify-content: flex-end;
   margin: 2em 0;
+  gap: 16px;
   &__button {
     background-color: $background-primary;
   }
@@ -48,4 +49,12 @@
   gap: 10px;
   align-items: center;
   justify-content: center;
+}
+
+.ibk-table-container {
+  overflow: scroll;
+  max-height: 800px;
+  height: 600px;
+  margin-bottom: 2em;
+  padding-bottom: 2em;
 }

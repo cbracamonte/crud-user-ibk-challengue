@@ -1,0 +1,14 @@
+<div class="modal-overlay">
+  <div class="modal-container">
+    <div class="modal-ibk-header">
+      <h4>Eliminación</h4>
+      <button (click)="closeModal()" class="close-button">&times;</button>
+    </div>
+    <div class="modal-ibk-content">
+      <p>
+        Estas seguro de eliminar el usuario <strong>{{ user.name }}</strong>
+      </p>
+      <button (click)="deleteUser()" class="btn btn-danger">Eliminar</button>
+    </div>
+  </div>
+</div>

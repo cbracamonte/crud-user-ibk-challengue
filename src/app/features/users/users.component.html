@@ -1,39 +1,52 @@
 <section class="ibk-panel-body">
-  <table class="ibk-table">
-    <thead class="ibk-table-thead">
-      <th class="ibk-table-thead__th">Nombre</th>
-      <th class="ibk-table-thead__th">Cargo</th>
-      <th class="ibk-table-thead__th">Correo</th>
-      <th class="ibk-table-thead__th">Acciones</th>
-    </thead>
-    <tfoot>
-      <tr>
-        <td colspan="4">
-          <section class="ibk-table-footer">
-            <button
-              class="ibk-table-footer__button btn btn-primary"
-              (click)="toUserAdd()"
-            >
-              Agregar Usuario
-            </button>
-          </section>
-        </td>
-      </tr>
-    </tfoot>
-    <tbody class="ibk-table-tbody">
-      <tr class="ibk-table-tbody-tr">
-        <th class="ibk-table-tbody-tr__th">Robyn</th>
-        <td class="ibk-table-tbody-tr__th">Technical Writer</td>
-        <td class="ibk-table-tbody-tr__th">robyn@example.com</td>
-        <td class="ibk-table-tbody-td">
-          <section class="ibk-table-actions">
-            <a [routerLink]="['/users', '22']" class="btn btn-success"
-              >Editar</a
-            >
-            <a class="btn btn-danger">Eliminar</a>
-          </section>
-        </td>
-      </tr>
-    </tbody>
-  </table>
+  <section class="ibk-header">
+    <button
+      class="ibk-header__button btn btn-primary"
+      (click)="toUserAdd()"
+    >
+      Agregar Usuario
+    </button>
+    <button
+      class="btn btn-success"
+      (click)="captureScreenshot()"
+    >
+      Capturar Imagen - Listado Usuarios
+    </button>
+  </section>
+  <div #tableUsers class="ibk-table-container">
+    <table class="ibk-table">
+      <thead class="ibk-table-thead">
+        <th class="ibk-table-thead__th">Nombre</th>
+        <th class="ibk-table-thead__th">Cargo</th>
+        <th class="ibk-table-thead__th">Correo</th>
+        <th class="ibk-table-thead__th">Acciones</th>
+      </thead>
+      <tbody class="ibk-table-tbody">
+        <tr class="ibk-table-tbody-tr" *ngFor="let user of users">
+          <td class="ibk-table-tbody-tr__td">
+            {{ user.name }}
+          </td>
+          <td class="ibk-table-tbody-tr__td">
+            {{ user.position }}
+          </td>
+          <td class="ibk-table-tbody-tr__td">
+            {{ user.email }}
+          </td>
+          <td class="ibk-table-tbody-td">
+            <section class="ibk-table-actions">
+              <a (click)="toEditUser(user)" class="btn btn-success">Editar</a>
+              <a class="btn btn-danger" (click)="toDeleteUser(user)"
+                >Eliminar</a
+              >
+            </section>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </section>
+<app-modal
+  *ngIf="showModal"
+  [user]="userSelected"
+  (toDeleteUser)="deleteUser($event)"
+></app-modal>
