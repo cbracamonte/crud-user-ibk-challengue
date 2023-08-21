@@ -1,42 +1,63 @@
-#
+# Microfrontend Example with Docker
 
-1. Instalar docker
- <https://docs.docker.com/desktop/install/windows-install/>
-2. Habilitar subsistema de Linux en Windows
- <https://learn.microsoft.com/en-us/windows/wsl/install-manual>
-3. Descargar imagen de NGINX de DockerHub
- <https://hub.docker.com/_/nginx>
-4. Ejecutar el comando:
- docker pull nginx
-5. Descargar imagen Node de DockerHub
-  <https://hub.docker.com/_/node/>
-4. Ejecutar el comando:
- docker pull node
-5. Luego:
+Este proyecto es un ejemplo de microfrontend utilizando Docker para el entorno de desarrollo y demostrando cómo compartir estados entre microfrontends utilizando el concepto de BroadcastChannel
+
+## Técnologias
+
+- Web-Shell : Angular 14
+- Web Microfrontend : Stencil
+- broadcastchannel - Libreria creada por Hernan Bracamonte Dev
+
+## Pasos de Configuración
+
+1. Instalar Docker:
+   - [Instrucciones para instalar Docker](https://docs.docker.com/desktop/install/)
+
+2. Habilitar Subsistema de Linux en Windows:
+   - [Instrucciones para habilitar WSL en Windows](https://learn.microsoft.com/en-us/windows/wsl/install-manual)
+
+3. Descargar las imágenes de NGINX y Node desde DockerHub:
+   - [Imagen de NGINX en DockerHub](https://hub.docker.com/_/nginx)
+   - [Imagen de Node en DockerHub](https://hub.docker.com/_/node/)
+
+   Ejecutar los siguientes comandos:
+
+   ```bash
+   docker pull nginx
+   docker pull node
+
+## Construcción y Ejecución
+
+npm install
 npm run build
 npm run docker-build
 npm run docker-run
 
-Para esto, deben tener libre el puerto 80 que será para nuestra app shell
+- Asegúrate de tener el puerto 80 disponible para la aplicación shell.
 
-6. Caso de uso para una manejo de estados en el microfrontend
+## Acceder a la aplicación
 
-Para esto debemos aplicar el concepto de BroadCastChannel <https://developer.mozilla.org/en-US/docs/Web/API/BroadcastChannel>
-para poder compartir los estados de una pagina a otra, en este caso se creo una libreria que pueden descargarla de :
-<https://www.npmjs.com/package/broadcast-channel-hb>
+Si estás ejecutando localmente: <http://localhost:4200/users>
+Si estás utilizando Docker: <http://localhost/users>
 
-npm i broadcast-channel-hb
+## Manejo de Estados en Microfrontends
 
-Podriamos trabajarlo con localstorage o indexdb para mantener la persistencia
+Para el manejo de estados entre microfrontends, se utiliza el concepto de BroadcastChannel. Además, se utiliza la librería broadcast-channel-hb para facilitar la comunicación entre páginas.
 
-El ejercicio es el siguiente:
+- Para instalar la librería:
 
-Se tiene la shell(app angular) generamos un evento de edicion de usuario, este emite un evento que lo escucha la otra aplicación (mfe) y recupera los dato
+npm install broadcast-channel-hb
 
-NOTA: POR TIEMPO NO PUDE DAR CON EL DESARROLLO COMPLETO, FALTA EL TEMA DE LA PERSISTENCIA PARA PODER OBTENER LA DATA.
+- La idea es generar eventos en la shell (app Angular) y escuchar estos eventos en otras aplicaciones (microfrontends) para compartir estados.
 
-7. Ejecutamos la shell
- npm run start para verlo en local
+- Repositorio: <https://github.com/cbracamonte/broadcast-channel-ibk>
 
-8. Si es con docker visitar:
-<http://localhost/users>
+## Notas
+
+- Este proyecto es un ejemplo y puede requerir ajustes y mejoras adicionales.
+- No se ha implementado la persistencia de datos en este ejemplo por temas de tiempo
+
+## Pizza Owner
+
+    Hernan Bracamonte 
+     - https://www.linkedin.com/in/hernanbracamonte/
