@@ -9,9 +9,20 @@ Este proyecto es un ejemplo de un CRUD de Usuarios
 - STACK MEAN + StencilJS + StoryBook + Docker + Nginx
 - Genera screenshots de las funciones del CRUD
 
-# Microfrontend Example with Docker
+# Microfrontend/Docker
 
-Este proyecto es un ejemplo de microfrontend utilizando Docker para el entorno de desarrollo y demostrando cómo compartir estados entre microfrontends utilizando el concepto de BroadcastChannel
+Este proyecto es un ejemplo de microfrontend utilizando Docker para el entorno de desarrollo y demostrando cómo compartir estados entre microfrontends utilizando el concepto de BroadcastChannel.
+
+Se puede hacer por medio de:
+
+- iframes
+- module-federation (Recomendado)
+
+## Ejemplo usando module-federation-angular-webpack
+
+Repo: ![Microfrontend con Webpack - Angular](https://github.com/cbracamonte/module-federation-angular)
+
+En este caso de uso saremos IFRAME como canal para la llamada a otros microfrontends
 
 ## Demo Images
 
