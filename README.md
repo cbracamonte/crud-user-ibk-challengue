@@ -16,15 +16,15 @@ Este proyecto es un ejemplo de microfrontend utilizando Docker para el entorno d
 ## Demo Images
 
 - Listado
-![Listado del Usuarios](https://raw.githubusercontent.com/cbracamonte/crud-user-ibk-challengue/main/assets/listado.png)
+![Listado del Usuarios](https://raw.githubusercontent.com/cbracamonte/crud-user-ibk-challengue/main/assets/listado.PNG)
 - Agregar
-![Agregar del Usuarios](https://raw.githubusercontent.com/cbracamonte/crud-user-ibk-challengue/main/assets/agegar.png)
+![Agregar del Usuarios](https://raw.githubusercontent.com/cbracamonte/crud-user-ibk-challengue/main/assets/agegar.PNG)
 - Editar
-![Editar del Usuarios](https://raw.githubusercontent.com/cbracamonte/crud-user-ibk-challengue/main/assets/editar.png)
+![Editar del Usuarios](https://raw.githubusercontent.com/cbracamonte/crud-user-ibk-challengue/main/assets/editar.PNG)
 - Eliminar
-![Eliminar del Usuarios](https://raw.githubusercontent.com/cbracamonte/crud-user-ibk-challengue/main/assets/eliminar.png)
+![Eliminar del Usuarios](https://raw.githubusercontent.com/cbracamonte/crud-user-ibk-challengue/main/assets/eliminar.PNG)
 - Genera Imagen
-![Genera imagen para su descarga](https://raw.githubusercontent.com/cbracamonte/crud-user-ibk-challengue/main/assets/generafoto.png)
+![Genera imagen para su descarga](https://raw.githubusercontent.com/cbracamonte/crud-user-ibk-challengue/main/assets/generafoto.PNG)
 
 -
 
