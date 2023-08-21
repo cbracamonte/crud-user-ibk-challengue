@@ -16,15 +16,15 @@ Este proyecto es un ejemplo de microfrontend utilizando Docker para el entorno d
 ## Demo Images
 
 - Listado
-![Listado del Usuarios](https://github.com/cbracamonte/crud-user-ibk-challengue/assets/listado.png)
+![Listado del Usuarios](https://raw.githubusercontent.com/cbracamonte/crud-user-ibk-challengue/main/assets/listado.png)
 - Agregar
-![Agregar del Usuarios](https://github.com/cbracamonte/crud-user-ibk-challengue/assets/agegar.png)
+![Agregar del Usuarios](https://raw.githubusercontent.com/cbracamonte/crud-user-ibk-challengue/main/assets/agegar.png)
 - Editar
-![Editar del Usuarios](https://github.com/cbracamonte/crud-user-ibk-challengue/assets/editar.png)
+![Editar del Usuarios](https://raw.githubusercontent.com/cbracamonte/crud-user-ibk-challengue/main/assets/editar.png)
 - Eliminar
-![Eliminar del Usuarios](https://github.com/cbracamonte/crud-user-ibk-challengue/assets/eliminar.png)
+![Eliminar del Usuarios](https://raw.githubusercontent.com/cbracamonte/crud-user-ibk-challengue/main/assets/eliminar.png)
 - Genera Imagen
-![Genera imagen para su descarga](https://github.com/cbracamonte/crud-user-ibk-challengue/assets/generafoto.png)
+![Genera imagen para su descarga](https://raw.githubusercontent.com/cbracamonte/crud-user-ibk-challengue/main/assets/generafoto.png)
 
 -
 
