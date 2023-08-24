@@ -1,6 +1,6 @@
 # RETO INTERBANK - SISTEMA DE ADMINISTRACIÓN DE USUARIOS
 
-Este proyecto es un ejemplo de un CRUD de Usuarios
+Este proyecto es un ejemplo de un CRUD de Usuarios - Web Shell Angular
 
 # Funcionalidades
 
@@ -43,7 +43,7 @@ En este caso de uso saremos IFRAME como canal para la llamada a otros microfront
 
 - Web-Shell : Angular 14
 - Web Microfrontend : Stencil
-- broadcastchannel - Libreria creada por Hernan Bracamonte Dev
+- broadcastchannel - Libreria creada por Hernan Bracamonte
 
 ## Pasos de Configuración
 
@@ -63,6 +63,12 @@ En este caso de uso saremos IFRAME como canal para la llamada a otros microfront
    docker pull nginx
    docker pull node
 
+
+## Clonamos el proyecto
+
+ ```bash
+   git clone https://github.com/cbracamonte/crud-user-ibk-challengue.git
+   ```
 ## Construcción y Ejecución
 
     npm install
@@ -74,8 +80,8 @@ En este caso de uso saremos IFRAME como canal para la llamada a otros microfront
 
 ## Acceder a la aplicación
 
-Si estás ejecutando localmente: <http://localhost:4200/users>
-Si estás utilizando Docker: <http://localhost/users>
+Si estás ejecutando localmente: `` http://localhost:4200/users````
+Si estás utilizando Docker: ```` http://localhost/users ``````
 
 ## Manejo de Estados en Microfrontends
 
@@ -87,12 +93,12 @@ Para el manejo de estados entre microfrontends, se utiliza el concepto de Broadc
     npm install broadcast-channel-hb
 - La idea es generar eventos en la shell (app Angular) y escuchar estos eventos en otras aplicaciones (microfrontends) para compartir estados.
 
-- Repositorio: <https://github.com/cbracamonte/broadcast-channel-ibk>
+- Repositorio: https://github.com/cbracamonte/broadcast-channel-ibk
 
 ## Notas
 
 - Este proyecto es un ejemplo y puede requerir ajustes y mejoras adicionales.
-- No se ha implementado la persistencia de datos en este ejemplo por temas de tiempo
+- No se ha implementado la persistencia de los estados en este ejemplo por temas de tiempo
 -
 
 ---
