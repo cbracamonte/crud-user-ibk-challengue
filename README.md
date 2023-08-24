@@ -48,7 +48,7 @@ En este caso de uso saremos IFRAME como canal para la llamada a otros microfront
 ## Pasos de Configuración
 
 1. Instalar Docker:
-   - [Instrucciones para instalar Docker](https://docs.docker.com/desktop/install/)
+   - [Instrucciones para instalar Docker](https://www.docker.com/products/docker-desktop/)
 
 2. Habilitar Subsistema de Linux en Windows:
    - [Instrucciones para habilitar WSL en Windows](https://learn.microsoft.com/en-us/windows/wsl/install-manual)
